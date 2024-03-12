@@ -1,8 +1,17 @@
+import java.util.Scanner;
 
 public class Welcome {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		Scanner input = new Scanner(System.in);
+		
+		System.out.print("당신의 이름을 입력하세요: ");
+		String name = input.next();
+		
+		System.out.print("연락처를 입력하세요: ");
+		int Phone = input.nextInt(); // 숫자만 입력
+		
+		
 		String greeting = "Welcome to Shopping Mall";
 		String tagline = "Welcome to Book Market!";
 		
@@ -17,7 +26,9 @@ public class Welcome {
 		System.out.println(" 7. 영수증 표시하기 \t8. 종료");
 		System.out.println("*********************************");
 		
-		
+		System.out.println("메뉴 번호를 선택하세요 ");
+		int choice = input.nextInt();
+		System.out.println(choice + "번을 선택했습니다. ");
 		
 		
 		
